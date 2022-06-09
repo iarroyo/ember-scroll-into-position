@@ -1,7 +1,22 @@
-{{page-title "EmberScrollIntoPosition"}}
+{{page-title 'EmberScrollIntoPosition'}}
 
-{{!-- The following component displays Ember's default welcome message. --}}
-<WelcomePage />
-{{!-- Feel free to remove this! --}}
-
-{{outlet}}
+<div class='flex flex-col items-center h-[600px]' t>
+  <div
+    class='p-2 border-8 border-red-200 flex flex-col items-center overflow-y-scroll'
+    data-test-container-layout
+  >
+    {{#each (repeat 10)}}
+      <div class='shadow-inner shadow-xl p-4 my-4 w-[600px]'>Lorem ipsum dolor
+        sit amet consectetur adipisicing elit. Saepe aperiam quas velit
+        doloremque explicabo nobis veniam iste sint nisi magni quae consequatur,
+        distinctio sapiente repellat delectus? Eos recusandae magnam saepe! Quos
+        sed explicabo ipsam eum molestias animi, voluptate perferendis optio
+        incidunt pariatur quis rem at. Illo tempore veritatis esse numquam dicta
+        expedita voluptatem omnis sint corporis ea consectetur, ullam quasi!
+        Nemo mollitia illum reprehenderit corrupti porro consectetur vel fugiat
+        numquam, atque sequi accusantium, rerum, officia fugit vero temporibus
+        omnis tempore. Aliquam velit eos doloribus molestias! Voluptas,
+        reiciendis ullam! Ducimus, exercitationem?</div>
+    {{/each}}
+  </div>
+</div>
